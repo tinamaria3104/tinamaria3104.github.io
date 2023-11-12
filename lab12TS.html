@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang = "en" > 
+<head>
+<title> greeting card</title>
+<meta charset="utf-8">
+<!--My Lab 12 Template Tina Sandoval H02 11/6/23-->
+<style>
+body {background-color:green}
+
+div.title {position:absolute; top:10px; left:50px; width: 400px; height:200px text-align:justify; color:white;}
+
+div.image {position:absolute; top:150px; left:50px}
+
+div.text {position:absolute; top:300px; left:600px; right: 100px; width: 500px; font-variant:small-caps; text-align:justify}
+</style>
+<script>
+function over()
+{
+document.getElementById("summer").src="Lab12_Images/falldog.jpeg"; document.getElementById("dont").innerHTML="But <em> fall </em>is here, and you should be glad!";document.body.style.backgroundColor="#f08c35";document.getElementById("autumn").innerHTML="happy autumn equinox!"
+}
+</script>
+</head>
+<body>
+<div class="title">
+<h1 id="dont"> I know <em> summer </em>is gone and you might be sad...</h1>
+</div>
+<div class="image">
+<img id="summer" src="Lab12_Images/summerdog.jpeg" alt="summer dog" height="400" width="400" onmouseover="over()" onmouseout="out()">
+</div>
+<div class="text">
+<h1 id="autumn">  </h1>
+</div>
+</body>
+</html>
